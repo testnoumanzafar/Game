@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #gameapp {
+        border-radius: 23px;
+    width: 450px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    top: 54px;
+   
+    }
+
+    button {
+        position: relative;
+        top: 150px;
+        left: 185px;
+        padding: 14px 22px;
+        background-color:rgb(27, 25, 25);
+        border-radius: 16px;
+        border: none;
+         
+        color: aliceblue;
+    }
+    #two {
+        display: flex;
+    }
+    #scoreBox,
+    #lifeBox {
+        border: 1px solid rebeccapurple;
+        position: relative;
+        top: 45px;
+        left: 23px;
+        padding: 19px 13px;
+        background-color: orange;
+        border-radius: 19px;
+    }
+
+    #center {
+
+        left: 105px;
+    top: 68px;
+    position: relative;
+   color:   lemonchiffon; 
+    }
+
+    .hidden {
+        display: none;
+    }
+    .baloon{
+        width: 68px;
+        position: absolute;
+        bottom: 0;
+                        
+    }
+    #over{
+        position: relative;
+    left: 123px;
+    top: 167px;
+    }
+    .over{
+        color: rgb(157, 255, 0);
+    font-size: 23px;
+    left: 43px;
+    position: relative;
+    }
+    .color{
+    background-color: #C77750;
+
+    }
+    .color1{
+    background : linear-gradient(135deg,#00feba,#5b548a);
+
+    }
+   
+</style>
+
+<body>
+    <div id="gameapp"  class="color">
+        <div id="splashscreen" >
+            <h1 id="center">Welcome to game </h1>
+            <button id="Start" onclick="startgame()">Start</button>
+        </div>
+
+        <div id="playscreen" class="hidden  ">
+            <div id="two">
+                <h1 id="scoreBox">0</h1>
+                <h1 id="lifeBox">5</h1>
+            </div>
+        </div>
+   <div id="over"  class="hidden" >
+       <div class="over">Game is over</div>
+       <h2>Thanks for playing</h2>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+   
+
+</html>
